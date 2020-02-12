@@ -37,9 +37,9 @@ x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?\
 
-y = []
-for i in range(len(x)):
-    if (int(x[i]) % 2) == 0:
-        y.append(int(x[i]))
+y = [x[i] for i in range(len(x)) if(int(x[i])) % 2 == 0]
+# for i in range(len(x)):
+#     if (int(x[i]) % 2) == 0:
+#         y.append(int(x[i]))
 
 print(y)

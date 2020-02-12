@@ -21,10 +21,13 @@ print(f1(1, 2))
 
 
 def f2(*args):
-    total = 0
-    for num in args:
-        total += num
-    return total
+    return sum(args)
+
+# def f2(*args):
+#     total = 0
+#     for num in args:
+#         total += num
+#     return total
 
 
 print(f2(1))                    # Should print 1
@@ -45,8 +48,12 @@ print(f2(*a))    # Should print 22
 # YOUR CODE HERE
 
 
-def f3(a, b=1):
-    return a + b
+def f3(num1, num2=1):
+  return num1 + num2
+
+
+# def f3(a, b=1):
+#     return a + b
 
 
 print(f3(1, 2))  # Should print 3
